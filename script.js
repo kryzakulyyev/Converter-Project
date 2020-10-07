@@ -1,30 +1,31 @@
-//Kelvin to Celsius, then to Fahrenheit.
 
-//Kelvin value
-const kelvin=prompt("Enter the Kelvin value")*1;
+
+
+//Kelvin to Celsius, then  Fahrenheit.
+//Kelvin variable
+const kelvin=prompt("Enter the Kelvin value"); //Kelvin variable is constanted and it is not change 
+
+
+//Celsius variable
+let celsius=kelvin-273; // Celsius value less than Kelvin value. Because of formul: celsius=kelvin-273; 
+
+//Fahrenheit variable
+let fahrenheit=celsius*(9/5)+32; //This formul result is giving fahrenheit value.
+
+//Round the number
+fahrenheit=Math.round(fahrenheit); // fahrenheit result be decimal number beacuse of formul method "(9/5)". Thats why we are using Math.round model. 
  
 
-// Count Celsius value
-let celsius=kelvin-273 ;
 
-//Calculate Fahrenheit value;
-let fahrenheit=celsius*(9/5)+32;
+//print and counting Fahrenheit degrees
+alert(`The temperature is ${fahrenheit} degrees Fahrenheit`); 
 
-// Round the number saved to fahrenheit with Math method.
-fahrenheit=Math.round(fahrenheit); 
+//Newton value
+ let newton=celsius*(33/100);
+ newton=Math.floor(newton); 
+ alert(`Newton temperature is ${newton}`);
 
- // Print the result  
- console.log("The temperature is TEMPERATURE degrees Fahrenheit.");
- 
- alert(`${kelvin} kelvin equals to ${celsius} celsius which converts to ${fahrenheit} Fahrenheit`);
-  // Newton value floor, and print
-  const Newton=prompt("Enter the Speed ")*1;
-
-  let newton = celsius * (33/100);
-  let 
-
-
-console.log(newton); 
-
-console.log(Math.floor(newton));
-alert(`${newton} newton equals to ${celsiue} speed`);
+ //Challange example.
+const lb=prompt("Enter the kg:");
+ let kg=lb/2.2046;
+ alert(` ${lb} pound is ${kg} kilogram`); //Chalange exapmle counting  "lb" to "kg"
